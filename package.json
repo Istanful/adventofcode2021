@@ -1,0 +1,14 @@
+{
+  "name": "adventofcode2021",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Istanful/adventofcode2021.git",
+  "author": "Emric <emric.mansson@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^27.4.3"
+  }
+}
