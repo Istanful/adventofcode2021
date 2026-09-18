@@ -90,5 +90,20 @@ describe("getIntersections", () => {
         [0, 2],
       ]);
     });
+
+    it("does not return coordinates outside range", () => {
+      const lineA = [
+        [0, 0],
+        [0, 2],
+      ];
+      const lineB = [
+        [0, 3],
+        [0, 4],
+      ];
+
+      const intersections = getIntersections(lineA, lineB);
+
+      expect(intersections).toEqual([]);
+    });
   });
 });

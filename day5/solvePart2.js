@@ -2,12 +2,7 @@ const countIntersections = require("./countIntersections");
 const getAllIntersections = require("./getAllIntersections");
 const parseLines = require("./parseLines");
 const input = require("./input");
-const isHorizontal = require("./isHorizontal");
-const isVertical = require("./isVertical");
 
 const lines = parseLines(input);
-const intersections = getAllIntersections(
-  lines,
-  (line) => isHorizontal(line) || isVertical(line)
-);
+const intersections = getAllIntersections(lines);
 console.log(Object.keys(countIntersections(intersections)).length);

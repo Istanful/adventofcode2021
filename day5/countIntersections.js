@@ -1,6 +1,8 @@
 module.exports = function countIntersections(intersections) {
-  return intersections.reduce((counts, intersection) => {
+  const counts = {};
+  intersections.forEach((intersection) => {
     const count = counts[intersection] ?? 0;
-    return { ...counts, [intersection]: count + 2 };
-  }, {});
+    counts[intersection] = count + 2;
+  });
+  return counts;
 };
